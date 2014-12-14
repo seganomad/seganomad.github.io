@@ -262,7 +262,7 @@ window.reset = function(){
 		for(var y=0;y<GRID_SIZE;y++){
 			if(Math.random()<(1-window.EMPTINESS)){
 				var draggable = new Draggable((x+0.5)*TILE_SIZE, (y+0.5)*TILE_SIZE);
-                                draggable.age = (Math.random() * 40);
+                                draggable.age = (Math.random() * BASE_LIFESPAN);
                                 draggable.lifespan = BASE_LIFESPAN + (Math.random() * LIFESPAN_BONUS);
 				draggable.color = (Math.random()<window.RATIO_TRIANGLES) ? "triangle" : "square";
                                 draggable.childColor = draggable.color;
@@ -511,7 +511,13 @@ function step()
         for(var i = 0; i < draggables.length; ++i)
         {
             var d = draggables[i];
-            d.age += YEAR_PER_STEP;
+            
+            // shapes age faster when alone/unhappy =[
+            if( d.alone || d.shaking )
+                d.age += YEAR_PER_STEP * 1.1;
+            else
+                d.age += YEAR_PER_STEP;
+            
             if( d.age < d.lifespan )
             {
                 nextGeneration.push(d);

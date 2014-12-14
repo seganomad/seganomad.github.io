@@ -2,6 +2,8 @@ var POLYGON_POSITIONS = [{"x":15,"y":15,"color":1},{"x":15,"y":75,"color":1},{"x
 
 window.reset = function(){
 
+        births = 0;
+        
 	STATS = {
 		steps:0,
 		offset:0
@@ -15,6 +17,9 @@ window.reset = function(){
 		var pos = POLYGON_POSITIONS[i];
 		var draggable = new Draggable(pos.x,pos.y);
 		draggable.color = pos.color ? "triangle" : "square";
+                draggable.childColor = draggable.color;
+                draggable.age = (Math.random() * BASE_LIFESPAN);
+                draggable.lifespan = BASE_LIFESPAN + (Math.random() * LIFESPAN_BONUS);
 		draggables.push(draggable);
 	}
 

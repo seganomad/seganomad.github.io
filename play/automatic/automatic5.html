@@ -47,6 +47,7 @@
 
 <script src="../lib/Mouse.js"></script>
 <script src="automatic.js"></script>
+<!-- <script src="automatic_start_segregated.js"></script> -->
 <script src="doubleslider.js"></script>
 <script>
 window.PICK_UP_ANYONE = true;
@@ -60,7 +61,7 @@ var whatever = new DoubleSlider(document.getElementById("slider"),{
 		{color:"#aaa",icon:"ds_happy.png"},
 		{color:"#555",icon:"ds_sad.png"}
 	],
-	values:[0.20,0.80],
+	values:[0.10,0.80],
 	onChange:function(values){
 		
 		window.BIAS = values[0];
