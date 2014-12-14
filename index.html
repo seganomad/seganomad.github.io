@@ -1,2 +1,441 @@
-HELLO GITHUB
-Testing...
+<!doctype html>
+<html>
+<head>
+
+	<!-- Place this data between the <head> tags of your website -->
+	<title>Parable of the Polygons - a playable post on the shape of society</title>
+	<meta name="description" content="A playable post on how choices affect the world." />
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Schema.org markup for Google+ -->
+	<!-- <meta itemprop="name" content="Parable of the Polygons">
+	<meta itemprop="description" content="A playable post on how choices affect the world.">
+	<meta itemprop="image" content="http://ncase.me/polygons/social/thumbnail.png"> -->
+
+	<!-- Twitter Card data -->
+	<!-- <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Parable of the Polygons">
+	<meta name="twitter:description" content="A playable post on how harmless choices can make a harmful world.">
+	<meta name="twitter:creator" content="@vihartvihart">
+	<meta name="twitter:image" content="http://ncase.me/polygons/social/thumbnail.png"> -->
+
+	<!-- Open Graph data -->
+	<!-- <meta property="og:title" content="Parable of the Polygons">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://ncase.me/polygons">
+	<meta property="og:image" content="http://ncase.me/polygons/social/thumbnail.png">
+	<meta property="og:description" content="A playable post on how choices affect the world.">
+	<meta property="og:site_name" content="Parable of the Polygons"> -->
+
+	<!-- CSS -->
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<center>Trigger warning: Satire</center>
+	<!-- CARTOONS -->
+	<div id="cartoon_container">
+		<img id="cartoon" width="270" src=""/>
+		<div id="cartoon_arrow"></div>
+	</div>
+
+	<!-- SPLASH -->
+	<div id="intro_container">
+		<div id="intro">
+			<iframe src="play/intro/intro.html" id="intro_background" scrolling="no"></iframe>
+		</div>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter">
+
+            <p><strong>This is a story all about how our world gets flipped,<br> turned upside down.</strong></p>
+		<p>
+			These little cuties are 50% Triangles, 50% Squares and slightly prefer their own kind.
+			But only slightly!
+			<!-- In fact, every polygon <i>prefers</i> being in a diverse crowd: -->
+		</p>
+
+		<iframe id="mini_intro" playable src="play/mini/mini_intro.html" width="800" height="385" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+
+		<p>
+			You can only move them if they're unhappy with their immediate neighborhood.
+			Once they're OK where they are, <i>you can't move them until they're unhappy with their neighbors again</i>.
+			They've got one, simple rule:
+		</p>
+
+		<p style="text-align:center">
+			<b>
+			"I wanna move if less than 1/3 of my neighbors are like me."
+			</b>
+		</p>
+		<iframe playable src="play/mini/mini_unhappy.html" width="250" height="320" scrolling="no" style="float:left; margin:0; margin-left:10px; position:relative; left:-30px"  embedded></iframe>
+		<iframe playable src="play/mini/mini_happy.html" width="250" height="320" scrolling="no" style="float:left; margin:0; margin-left:10px"  embedded></iframe>
+		<iframe playable src="play/mini/mini_bored.html" width="250" height="320" scrolling="no" style="float:left; margin:0; margin-left:10px; position:relative; left:30px"  embedded></iframe>
+		<div style="clear:both;height: 0;position: relative;top:-20px;">
+			<div style="width: 4px; height: 290px; background: #bbb;position: absolute;top: -292px;left: 245px;"></div>
+			<div style="width: 4px; height: 290px; background: #bbb;position: absolute;top: -292px;left: 537px;"></div>
+		</div>
+
+		<p>
+			Harmless, right?
+			Every polygon would be ok with a mixed neighborhood.
+			Surely their personal feelings can't affect the larger shape of society?
+			Well...
+		</p>
+		<div class="instruction">
+			drag &amp; drop unhappy polygons until nobody is unhappy:<br>
+			<span style="font-size:18px">(just move them to random empty spots. think about it.)</span>
+		</div>
+
+	</div>
+
+	<!-- PLAYABLE -->
+	<div class="playable">
+		<iframe playable src="play/manual/manual.html" width="550" height="650"></iframe>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter"> 
+		<p>
+			And... our shape society happily self-segregates, just like a gradeschool cafeteria.
+		</p>
+		<p>
+			Sometimes a neighborhood just becomes square,
+			and it's not their fault if no triangles wanna stick around.
+			And a triangular neighborhood would tolerate a square, but
+			they can't help it if squares ain't interested.
+		</p>
+		
+		<iframe id="mini_neighborhood" playable src="play/mini/mini_neighborhood.html" width="730" height="240" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+
+		<p>
+			In this next bit, unhappy shapes automatically move to random empty spots.
+			There's also a graph that tracks how much segregation there is over time.
+		</p>
+		<div class="instruction">
+			Run this simulation a few times and observe what happens...
+		</div>
+	</div>
+
+	<!-- PLAYABLE -->
+	<div class="playable">
+		<iframe playable src="play/automatic/automatic.html" style="position:relative;left:10px" width="1050" height="600"></iframe>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter">
+		<p>
+			What's up with that? These are good shapes, nice shapes.
+			And yet, though every individual only has a slight preference, society fragments.
+		</p>
+		
+		<iframe id="mini_checkerboard" playable src="play/mini/mini_checkerboard.html" width="730" height="240" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+
+		<p>
+			<strong>Local decisions lead to global patterns.</strong>
+		</p>
+		<p>	
+                        The shape of society emerges from everyone doing what they believe is right.
+			What if we taught these shapes to have zero bias?
+			What if we taught these shapes to have more bias?
+		</p>
+		<div class="instruction">
+			use the slider to adjust the shapes' individual bias:
+		</div>
+	</div>
+
+	<!-- PLAYABLE -->
+	<div class="playable">
+		<iframe playable src="play/automatic/automatic2.html" style="position:relative;left:10px" width="1050" height="600"></iframe>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter">
+		<p>
+			Notice how much more segregated things become, when you increase the bias beyond 33%.
+			What if the threshold was at 50%?
+			Seems reasonable for a shape to prefer not being in the minority...
+		</p>
+		
+		<br>
+		<iframe id="mini_bias_1" playable src="play/mini/mini_bias_1.html" width="310" height="440" scrolling="no" style="float:left; margin:0; margin-left:50px" embedded></iframe>
+		<iframe id="mini_bias_2" playable src="play/mini/mini_bias_2.html" width="310" height="440" scrolling="no" style="float:right; margin:0; margin-right:50px" embedded></iframe>
+		<div style="clear:both;height: 0;position: relative;top:-20px;">
+			<div style="width: 6px; height: 400px; background: #bbb;position: absolute;top: -420px;left: 397px;"></div>
+		</div>
+
+		<p>
+			So yeah, just turn everyone's bias down to zero, right?
+                        No way Jose.  The real world was shaped by evolution and speciation,
+                        shapes aren't going to embrace just because they hate eachother a little less...
+		</p>
+
+		<div class="instruction">
+			world starts segregated. what happens when you lower the bias?
+		</div>
+	</div>
+
+	<!-- PLAYABLE -->
+	<div class="playable">
+		<iframe playable src="play/automatic/automatic3.html" style="position:relative;left:10px" width="1050" height="600"></iframe>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter">
+		<p>
+			See what <i>doesn't</i> happen? 
+			No desegregation.
+			In a world with equality, shapes just don't care about shape anymore.
+                        If you want mixing, you need shapism.
+                        As long as everyone sees shape, you can base decisions on it.
+			What if shapes went through mandatory diversity training?
+		</p>
+		
+		<iframe id="mini_nonconform" playable src="play/mini/mini_nonconform.html" width="400" height="440" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+
+		<p>
+			Even though each polygon would be okay with having up to 90% of their neighbors be relatable,
+			they all mix together!
+			Let's see this play out on a larger scale,
+			when we change the amount of bias and anti-bias for all shapes.
+                        This is the best thing!
+		</p>
+		<div class="instruction">
+			what happens when shapes obtain liberal arts degrees?
+		</div>
+	</div>
+
+	<!-- PLAYABLE -->
+	<div class="playable">
+		<iframe playable src="play/automatic/automatic4.html" style="position:relative;left:10px" width="1050" height="600"></iframe>
+	</div>
+
+        <!-- CHAPTER -->
+        <div class="chapter" style="width: 900px;">
+            <div class="instruction">
+                HEY WAIT! THAT'S NOT RIGHT! I'VE GOT SOMETHING TO SAY!<br>
+                IF WE MIX ALL THE SHAPES, ALL THE SHAPES GO AWAY!<br><br>
+            </div>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <p>
+                            This, fellow squares, is where I draw the line.<br>
+                            Living near a triangle? Potentially fine.<br><br>
+
+                            Befriend a triangle? I'll take it in stride.<br>
+                            Starting a family? Well, that's genocide...<br><br>
+
+                            "That's right wing! That's hate! You can't say that here!"<br>
+                            Please try to listen and control your fear.<br><br>
+
+                            When you mix up two shapes, it can't be undone.<br>
+                            You have taken two shapes and reduced them to one.<br><br>
+
+                            So here we'll add aging, and breeding to boot!<br>
+                            And we'll do it up fast (programmings a hoot!)<br><br>
+                            
+                            When a shape gets real old, there's no reason to mourn,<br>
+                            it really just means that a new shape gets born!<br><br>
+                            
+                            A shape that is happy will pick a close friend,<br>
+                            they'll make a new shape (they might even blend.)<br><br>
+                        </p>
+                    </td>
+                    <td>
+                        <img onclick="alert(this.alt);" src="play/img/nazi_yay_square.png" alt="Please ignore my tattoo, don't judge based on skin! Stereotyping is the new 13th deadly sin!">
+                    </td>
+                </tr>
+            </table>
+            <div class="instruction">
+                    can you decrease segregtion while maintaining diversity?
+            </div>
+        </div>
+        
+        <!-- PLAYABLE -->
+        <div class="playable">
+            <iframe playable src="play/automatic/automatic5.html" style="position:relative;left:10px" width="1050" height="600"></iframe>
+        </div>
+            
+	<!-- CHAPTER -->
+	<div class="chapter">
+		<p>
+			All it takes is a change in the perception of what an acceptable environment looks like.
+			So, fellow shapes, remember it's not about being politically correct,
+			it's about realizing that the future deserves squares like us and acting accordingly.
+		</p>
+		<p style="text-align:center">
+			<b>
+				SHOVE THESE SHAPE TRAITORS INTO THEIR
+				<span style="color:hsl(0,90%,60%)">S</span>
+				<span style="color:hsl(36,90%,60%)">J</span>
+				<span style="color:hsl(72,90%,45%)">W</span>
+				<span style="color:hsl(108,90%,60%)">H</span>
+				<span style="color:hsl(144,90%,60%)">U</span>
+				<span style="color:hsl(180,90%,60%)">G</span>
+				<span style="color:hsl(216,90%,60%)">B</span>
+				<span style="color:hsl(252,90%,60%)">O</span>
+				<span style="color:hsl(288,90%,60%)">X</span>
+				<br>
+				<span style="font-size:18px">(hint: don't move them straight to the box; keep the miserable pairs close together)</span>
+			</b>
+		</p>
+
+		<iframe playable src="play/mini/mini_cooperate.html" width="810" height="290" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+		
+		<p>
+                    When you first swallow the red pill, it can be rough...
+                    but by working together, step by step, we'll get out of this mess.
+		</p>
+	</div>
+
+	<!-- CHAPTER -->
+	<div class="chapter">
+		<div class="instruction" style="font-size:50px; line-height:50px">
+			WRAPPING UP:
+		</div>
+		<p>
+			<b>1. Shapism is preservation.</b>
+			<br>
+                        Every day you're bombarded by anti-shapist messages, to the point where you might feel bad for being shapist.
+                        Everyone is shapist.  The preference for shapes with your own vertex count is totally natural. 
+                        The reality is that only one shape has ever built the sort of world that allows it to be criticized.  
+                        If you're getting triangle fatigue, you aren't alone.
+			<!--Micromotives, macrobehaviour...-->
+		</p>
+		<p>
+			<b>2. The past determines the present.</b>
+			<br>
+                        We have different shapes today because we had different shapes yesterday.  If you value a world
+                        with multiple shapes, do what you can to preserve them.
+                        You don't get rainbow paint by mixing all the colors.
+		</p>
+		<p>
+			<b>3. Fight cultural marxism!</b>
+			<br>
+                        Feminism, Ferguson, ISIS, GamerGate...  2014 wasn't great.
+                        You might be tempted to dye your armpits and become a vegan.
+                        You might be tempted to engage in lewd acts and become a deviant.
+                        The single most important thing you can do is be proud of who you are,
+                        be proud of who got you here and make sure your children resemble your grandparents.
+                        Maintain social cohesion by forming tight alliances with friends and neighbors who
+                        look and act like you do (if shit ever hits the fan, these squares won't be robbing you.)
+		</p>
+		<iframe playable src="play/mini/mini_ending.html" width="600" height="80" scrolling="no" style="margin:0 auto;display:block" embedded></iframe>
+	</div>
+        
+	<!-- References &amp; Remixes (Writing|Professor|Infographic|Video|Music -->
+	<div style="width: 100%; background: #222; overflow: hidden; color:#ddd">
+		<div class="chapter">
+			<div class="instruction">
+				Thank you for playing this blog post!
+			</div>
+			<br>
+			<div style="font-size:16px; line-height:18px">
+
+				The "cute segregation sim" was based off the work of Nobel Prize-winning game theorist,
+				Thomas Schelling. Specifically, his 1971 paper,
+				<a target="_blank" href="http://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf">
+				Dynamic Models of Segregation.</a>
+				They originally built on top of this, and showed how a small demand for diversity can
+				desegregate a neighborhood. In other words, they gave his model the ol' "happy ending."
+
+				<br><br>
+                                
+                                If you like to educate yourself instead of being spoonfed, read up on "diversity and social cohesion."
+                                
+                                <br><br>
+
+				Schelling's model gets the general gist of it, but of course, real life is more nuanced.
+				You might enjoy looking at real-world data, such as W.A.V. Clark's 1991 paper,
+				<a target="_blank" href="http://smg.media.mit.edu/library/Clark.ResidentialSegregation.pdf">A Test of the Schelling Segregation Model</a>.
+
+				<br><br>
+
+				There are other mathematical models of institutionalized bias out there!
+				<a target="_blank" href="http://www.ruf.rice.edu/~lane/papers/male_female.pdf">
+				Male-Female Differences: A Computer Simulation</a>
+				shows how a small gender bias compounds as you "five guys" your way up the corporate ladder.
+				<a target="_blank" href="http://iangent.blogspot.com/2013/10/the-petrie-multiplier-why-attack-on.html">
+				The Petrie Multiplier</a>
+                                shows why attacks on sexism are always directed at white men. Maybe? Who fucking knows.
+
+				<br><br>
+
+				Today's Big Moral Message&trade; is that by demanding a bit of diversity
+				in your spaces you might be committing racial genocide. Look at the
+				<a target="_blank" href="http://whitegenocideproject.com/">White Genocide Project</a>,
+				specifically the information about genocide by assimilation.
+
+				<br><br>
+
+				The original "playable post" was inspired by Bret Victor's 
+				<a target="_blank" href="http://worrydream.com/ExplorableExplanations/">
+				Explorable Explanations</a> and Ian Bogost's
+				<a target="_blank" href="http://bogost.com/books/persuasive_games/">
+				procedural rhetoric</a>.
+
+				<br><br>
+				<div style="border-bottom: 2px dashed #666"></div>
+
+				<span style="font-size:20px; line-height:30px">
+                                    <br>
+                                    Learn about aposematism, apply it to women.<br>
+                                    This is not a product of GamerGate.<br>
+                                    Don't dox me, bro!<br>
+				</span>
+
+				<br><br>
+				<div style="border-bottom: 2px dashed #666"></div>
+
+				<span style="font-size:18px; line-height:22px">
+
+					<br>
+
+					<b>Thank you to betas everywhere:</b><br>
+					You sleep with the feminazis so we don't have to.
+
+					<br><br>
+
+					<b>Boycott:</b><br>
+					<a target="_blank" href="http://www.wired.com/2014/12/empzeal-parable-polygons/">WIRED</a>,
+					<a target="_blank" href="http://www.washingtonpost.com/blogs/wonkblog/wp/2014/12/09/how-tiny-individual-biases-have-huge-cumulative-effects-on-racial-segregation/">Washington Post</a>,
+					<a target="_blank" href="http://boingboing.net/2014/12/08/parable-of-the-polygons-segre.html">BoingBoing</a>,
+					<a target="_blank" href="http://ccthing.tumblr.com/post/104764760336/parable-of-the-polygons-vi-hart-and-nicky-case">Creative Commons</a>,
+					<a target="_blank" href="http://killscreendaily.com/articles/parable-polygons-teaches-us-danger-and-power-individual-bias/">KillScreen</a>,
+					<a target="_blank" href="http://jayisgames.com/archives/2014/12/parable_of_the_polygons.php">JayIsGames</a>,
+					<a target="_blank" href="https://news.ycombinator.com/item?id=8716538">Hacker News</a>,
+					<a target="_blank" href="http://www.metafilter.com/145147/Parable-of-the-Polygons">MetaFilter</a>,
+					<a target="_blank" href="http://nymag.com/scienceofus/2014/12/these-cartoon-shapes-are-adorable-but-racist.html">New York Magazine</a>,
+					<a target="_blank" href="http://www.citylab.com/design/2014/12/an-immersive-game-shows-how-easily-segregation-arisesand-how-we-might-fix-it/383586/">The Atlantic's CityLab</a>,
+					<a target="_blank" href="http://www.salon.com/2014/12/10/sweet_little_shapes_teach_an_important_lesson_about_segregation/">Salon</a>,
+					<a target="_blank" href="http://www.polygon.com/2014/12/11/7361201/parable-of-the-polygons-bias">Polygon</a>
+
+					<br><br>
+
+					<b>Related things:</b><br>
+                                        <a target="_blank" href="http://ncase.me/polygons/">Propaganda</a>
+                                        <a target="_blank" href="https://youtu.be/v02DTSSTc5k">Propaganda Playthrough Video</a>
+					<a target="_blank" href="http://ncase.me/polygons-pentagons/play/automatic/automatic_sandbox_frame.html">Also Pentagons</a>
+
+				</span>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- SPLASH -->
+	<div id="outro_container">
+		<div id="outro">
+			<iframe src="play/outro/outro.html" id="outro_background" scrolling="no"></iframe>
+		</div>
+	</div>
+
+</body>
+
+<script src="js/Mouse.js"></script>
+<script src="js/intro.js"></script>
+<center>Vi, stick to math, <a href="https://www.youtube.com/watch?v=qqXi8WmQ_WM" target="_blank">we used to like you.</a></center>
+</html>
